@@ -48,4 +48,9 @@ public abstract class Trabajador extends Persona{
     public void imprimirTrabajador() {
     	System.out.println(toString());
     }
+    
+    // Metodo para calcular el salario anual
+    public double calcularSalarioAnual() {
+    	return salario * 12;
+    }
 }
