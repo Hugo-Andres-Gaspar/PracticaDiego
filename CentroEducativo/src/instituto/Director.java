@@ -29,12 +29,17 @@ public class Director extends Trabajador{
 	public void setTituloUniversitario(String tituloUniversitario) {
 		this.tituloUniversitario = tituloUniversitario;
 	}
+	
+	@Override
+	public String toString() {
+		return "Director [anosExperiencia=" + anosExperiencia + ", tituloUniversitario=" + tituloUniversitario
+				+ ", toString()=" + super.toString() + "]";
+	}
+	
+	public void imprimirDirector() {
+		System.out.println(toString());
+	}
 
-	
-	
-
-	
-	
 	@Override
 	public void presentarse() {
 		System.out.println("Hola me llamo " + nombre + ".");
