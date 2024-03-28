@@ -50,6 +50,8 @@ public class Director extends Trabajador{
 		System.out.println("Estoy gestionando el departamento " + departamento + ".");
 	}
 	
-	
+	public void darOrdenes(Profesor profesor, String orden) {
+		System.out.println("El director " + nombre + " le dice al profesor " + profesor.getNombre() + ": " + orden);
+	}
 	
 }
