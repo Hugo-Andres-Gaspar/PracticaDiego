@@ -82,4 +82,8 @@ public abstract class Persona {
         return edad;
 	}
 	
+	// Metodo para comprobar si es mayor de edad
+	public boolean  esMayorEdad() {
+		return calcularEdad() >= 18;
+	}
 }
