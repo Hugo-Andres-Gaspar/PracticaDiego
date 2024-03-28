@@ -53,4 +53,33 @@ public abstract class Persona {
 	public void imprimirPersona() {
 		System.out.println(toString());
 	}
+	
+	// Metodo para calcular la edad en base a la fecha actual
+	// Para hacer este metodo me he apoyado en chatgpt
+	public int calcularEdad() {
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Ingrese el año de nacimiento: ");
+		int anoNacimiento = teclado.nextInt();
+		
+		System.out.print("Ingrese el mes de nacimiento: ");
+		int mesNacimiento = teclado.nextInt();
+		
+		System.out.print("Ingrese su dia de nacimiento: ");
+		int diaNacimiento = teclado.nextInt();
+		
+		teclado.close();
+		
+		int anioActual = java.time.LocalDate.now().getYear();
+        int mesActual = java.time.LocalDate.now().getMonthValue();
+        int diaActual = java.time.LocalDate.now().getDayOfMonth();
+
+        int edad = anioActual - anoNacimiento;
+        
+        if (mesNacimiento > mesActual || (mesNacimiento == mesActual && diaNacimiento > diaActual)) {
+            edad--;
+        }
+
+        return edad;
+	}
+	
 }
