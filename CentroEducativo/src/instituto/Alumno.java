@@ -51,5 +51,12 @@ public class Alumno extends Persona {
 	public void presentarse() {
         System.out.println("Hola, soy " + nombre + " y soy un alumno.");		
 	}
-		
+	
+	public void consultarEstadoAlumno() {
+		if (matriculado) {
+			System.out.println(nombre + "está matriculado en el nivel educativo de " + nivelEducativo + " y está en el grado " + grado + ".");
+		} else {
+			System.out.println(nombre + "no está matriculado.");
+		}
+	}
 }
