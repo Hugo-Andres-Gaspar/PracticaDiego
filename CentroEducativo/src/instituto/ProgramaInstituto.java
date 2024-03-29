@@ -25,7 +25,7 @@ public class ProgramaInstituto {
 		for (Persona persona : personas) {
 			persona.imprimirPersona();
 		}
-		
+		System.out.println();
 		
 		// Mostrar el estodo de todos los alumnos
 		System.out.println("Estado de los alumnos: ");
@@ -35,21 +35,23 @@ public class ProgramaInstituto {
 				alumno.consultarEstadoAlumno();
 			}
 		}
-		
+		System.out.println();
 		
 		// Mostrar presentacion de todas las personas
 		System.out.println("Presentación de las personas: ");
 		for (Persona persona : personas) {
 			persona.presentarse();
 		}
-		
+		System.out.println();
 		
 		// Hacer que un director le de una orden al profesor
 		director.darOrdenes(profesor, "Tienes que hacer un examen el dia 10 y el dia 11 hacer una exposicion en el aula 15 a todos los profesores.");
 		
 		
 		//Realizar otras acciones específicas de cada trabajador
+		System.out.println();
 		director.tabajar();
+		System.out.println();
 		profesor.tabajar();
 	}
 
