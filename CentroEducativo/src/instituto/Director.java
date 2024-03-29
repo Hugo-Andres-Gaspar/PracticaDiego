@@ -46,7 +46,7 @@ public class Director extends Trabajador{
 	}
 	
 	@Override
-	public void tabajar() {
+	public void trabajar() {
 		System.out.println("Estoy gestionando el departamento " + departamento + ".");
 	}
 	

@@ -54,9 +54,9 @@ public class Alumno extends Persona {
 	
 	public void consultarEstadoAlumno() {
 		if (matriculado) {
-			System.out.println(nombre + "está matriculado en el nivel educativo de " + nivelEducativo + " y está en el grado " + grado + ".");
+			System.out.println(nombre + " está matriculado en el nivel educativo de " + nivelEducativo + " y está en el grado " + grado + ".");
 		} else {
-			System.out.println(nombre + "no está matriculado.");
+			System.out.println(nombre + " no está matriculado.");
 		}
 	}
 }

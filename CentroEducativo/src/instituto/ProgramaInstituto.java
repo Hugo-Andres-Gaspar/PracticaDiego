@@ -50,9 +50,9 @@ public class ProgramaInstituto {
 		
 		//Realizar otras acciones específicas de cada trabajador
 		System.out.println();
-		director.tabajar();
+		director.trabajar();
 		System.out.println();
-		profesor.tabajar();
+		profesor.trabajar();
 	}
 
 }

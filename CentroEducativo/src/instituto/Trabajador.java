@@ -37,7 +37,7 @@ public abstract class Trabajador extends Persona{
 		this.cargo = cargo;
 	}
 
-	public abstract void tabajar();
+	public abstract void trabajar();
 
 	@Override
 	public String toString() {

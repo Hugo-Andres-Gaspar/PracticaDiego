@@ -53,7 +53,7 @@ public class Profesor extends Trabajador{
 	}
 
 	@Override
-	public void tabajar() {
+	public void trabajar() {
 		System.out.println("Enseño la materia de " + materiaDada + ".");
 	}
 	
