@@ -2,8 +2,17 @@ package instituto;
 
 import java.util.ArrayList;
 
+/**
+ * @author Hugo Andres
+ * @version 1.0
+ * @since 30/03/2024
+ */
 public class ProgramaInstituto {
 
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// Crear arrayList de personas
 		ArrayList<Persona> personas = new ArrayList<>();

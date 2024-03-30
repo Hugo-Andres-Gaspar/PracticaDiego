@@ -6,6 +6,17 @@ public class Alumno extends Persona {
     private boolean matriculado;
 
     // Constructor de la clase Alumno
+    /**
+     * 
+     * @param nombre
+     * @param apellidos
+     * @param dNI
+     * @param edad
+     * @param genero
+     * @param grado
+     * @param nivelEducativo
+     * @param matriculado
+     */
 	public Alumno(String nombre, String apellidos, String dNI, int edad, String genero, int grado,
 			String nivelEducativo, boolean matriculado) {
 		// Llamada al constructor de la clase Persona

@@ -6,6 +6,20 @@ public class Profesor extends Trabajador{
     private int horasSemanales;
 
     // Constructor de la clase Profesor
+    /**
+     * 
+     * @param nombre
+     * @param apellidos
+     * @param dNI
+     * @param edad
+     * @param genero
+     * @param salario
+     * @param departamento
+     * @param cargo
+     * @param materiaDada
+     * @param especialidad
+     * @param horasSemanales
+     */
 	public Profesor(String nombre, String apellidos, String dNI, int edad, String genero, double salario,
 			String departamento, String cargo, String materiaDada, String especialidad, int horasSemanales) {
 		// Llamada al constructor de la clase Trabajador

@@ -10,6 +10,14 @@ public abstract class Persona {
     protected String genero;
     
     // Constructor de la clase Persona
+    /**
+     * 
+     * @param nombre
+     * @param apellidos
+     * @param dNI
+     * @param edad
+     * @param genero
+     */
 	public Persona(String nombre, String apellidos, String dNI, int edad, String genero) {
 		super();
 		this.nombre = nombre;
@@ -99,6 +107,10 @@ public abstract class Persona {
 	}
 	
 	// Metodo para comprobar si es mayor de edad
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean  esMayorEdad() {
 		return calcularEdad() >= 18;
 	}

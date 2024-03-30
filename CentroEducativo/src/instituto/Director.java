@@ -1,10 +1,27 @@
 package instituto;
 
+/**
+ * @deprecated Esta clase está obsoleta y será eliminada en futuras versiones. Usa la clase DirectorNuevo en su lugar.
+ * @see DirectorNuevo
+ */
 public class Director extends Trabajador{
 	private int anosExperiencia;
     private String tituloUniversitario;
 
     // Constructor de la clase Director
+    /**
+     * 
+     * @param nombre
+     * @param apellidos
+     * @param dNI
+     * @param edad
+     * @param genero
+     * @param salario
+     * @param departamento
+     * @param cargo
+     * @param anosExperiencia
+     * @param tituloUniversitario
+     */
 	public Director(String nombre, String apellidos, String dNI, int edad, String genero, double salario,
 			String departamento, String cargo, int anosExperiencia, String tituloUniversitario) {
 		// Llamada al constructor de la clase Trabajador
@@ -53,6 +70,11 @@ public class Director extends Trabajador{
 	}
 	
 	// Metodo para dar ordenes a un profesor
+	/**
+	 * 
+	 * @param profesor
+	 * @param orden
+	 */
 	public void darOrdenes(Profesor profesor, String orden) {
 		System.out.println("El director " + nombre + " le dice al profesor " + profesor.getNombre() + ": " + orden);
 	}

@@ -6,6 +6,17 @@ public abstract class Trabajador extends Persona{
     protected String cargo;
     
     // Constructor de la clase Trabajador
+    /**
+     * 
+     * @param nombre
+     * @param apellidos
+     * @param dNI
+     * @param edad
+     * @param genero
+     * @param salario
+     * @param departamento
+     * @param cargo
+     */
 	public Trabajador(String nombre, String apellidos, String dNI, int edad, String genero, double salario,
 			String departamento, String cargo) {
 		// Llamada al constructor de la clase persona
@@ -58,6 +69,10 @@ public abstract class Trabajador extends Persona{
     }
     
     // Metodo para calcular el salario anual
+    /**
+     * 
+     * @return
+     */
     public double calcularSalarioAnual() {
     	return salario * 12;
     }
