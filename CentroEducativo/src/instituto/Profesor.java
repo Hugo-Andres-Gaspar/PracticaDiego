@@ -5,14 +5,17 @@ public class Profesor extends Trabajador{
     private String especialidad;
     private int horasSemanales;
 
+    // Constructor de la clase Profesor
 	public Profesor(String nombre, String apellidos, String dNI, int edad, String genero, double salario,
 			String departamento, String cargo, String materiaDada, String especialidad, int horasSemanales) {
+		// Llamada al constructor de la clase Trabajador
 		super(nombre, apellidos, dNI, edad, genero, salario, departamento, cargo);
 		this.materiaDada = materiaDada;
 		this.especialidad = especialidad;
 		this.horasSemanales = horasSemanales;
 	}
 
+	// Metodos de acceso para la materia dada
 	public String getMateriaDada() {
 		return materiaDada;
 	}
@@ -21,6 +24,7 @@ public class Profesor extends Trabajador{
 		this.materiaDada = materiaDada;
 	}
 
+	// Metodos de acceso para la especialidad
 	public String getEspecialidad() {
 		return especialidad;
 	}
@@ -29,6 +33,7 @@ public class Profesor extends Trabajador{
 		this.especialidad = especialidad;
 	}
 
+	// Metodos de acceso para las horas semanales
 	public int getHorasSemanales() {
 		return horasSemanales;
 	}
@@ -43,6 +48,7 @@ public class Profesor extends Trabajador{
 				+ horasSemanales + ", toString()=" + super.toString() + "]";
 	}
 	
+	// Metodo que implementa el toString para imprimir los detalles del Profesor
 	public void imprimirProfesor() {
 		System.out.println(toString());
 	}

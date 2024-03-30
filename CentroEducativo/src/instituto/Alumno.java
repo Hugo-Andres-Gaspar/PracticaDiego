@@ -5,14 +5,17 @@ public class Alumno extends Persona {
     private String nivelEducativo;
     private boolean matriculado;
 
+    // Constructor de la clase Alumno
 	public Alumno(String nombre, String apellidos, String dNI, int edad, String genero, int grado,
 			String nivelEducativo, boolean matriculado) {
+		// Llamada al constructor de la clase Persona
 		super(nombre, apellidos, dNI, edad, genero);
 		this.grado = grado;
 		this.nivelEducativo = nivelEducativo;
 		this.matriculado = matriculado;
 	}
 
+	// Metodos de acceso para el grado
 	public int getGrado() {
 		return grado;
 	}
@@ -21,6 +24,7 @@ public class Alumno extends Persona {
 		this.grado = grado;
 	}
 
+	// Metodos de acceso para el nivel educativo
 	public String getNivelEducativo() {
 		return nivelEducativo;
 	}
@@ -28,7 +32,8 @@ public class Alumno extends Persona {
 	public void setNivelEducativo(String nivelEducativo) {
 		this.nivelEducativo = nivelEducativo;
 	}
-
+	
+	// Metodos para saber si esta o no matriculado 
 	public boolean isMatriculado() {
 		return matriculado;
 	}
@@ -43,6 +48,7 @@ public class Alumno extends Persona {
 				+ ", toString()=" + super.toString() + "]";
 	}
 	
+	// Metodo que implementa el toString para imprimir los detalles del Alumno
 	public void imprimirAlumno() {
 		System.out.println(toString());
 	}
@@ -52,6 +58,7 @@ public class Alumno extends Persona {
         System.out.println("Hola, soy " + nombre + " y soy un alumno.");		
 	}
 	
+	// Metodo para consultar el estado del alumno
 	public void consultarEstadoAlumno() {
 		if (matriculado) {
 			System.out.println(nombre + " está matriculado en el nivel educativo de " + nivelEducativo + " y está en el grado " + grado + ".");

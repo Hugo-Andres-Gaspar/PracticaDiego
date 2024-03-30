@@ -5,14 +5,17 @@ public abstract class Trabajador extends Persona{
     protected String departamento;
     protected String cargo;
     
+    // Constructor de la clase Trabajador
 	public Trabajador(String nombre, String apellidos, String dNI, int edad, String genero, double salario,
 			String departamento, String cargo) {
+		// Llamada al constructor de la clase persona
 		super(nombre, apellidos, dNI, edad, genero);
 		this.salario = salario;
 		this.departamento = departamento;
 		this.cargo = cargo;
 	}
 	
+	// Metdos de acceso para el salario
 	public double getSalario() {
 		return salario;
 	}
@@ -21,6 +24,7 @@ public abstract class Trabajador extends Persona{
 		this.salario = salario;
 	}
 
+	// Metdos de acceso para el departamento
 	public String getDepartamento() {
 		return departamento;
 	}
@@ -29,6 +33,7 @@ public abstract class Trabajador extends Persona{
 		this.departamento = departamento;
 	}
 	
+	// Metdos de acceso para el cargo
 	public String getCargo() {
 		return cargo;
 	}
@@ -37,6 +42,8 @@ public abstract class Trabajador extends Persona{
 		this.cargo = cargo;
 	}
 
+	// Metodo abstracto que define la accion de trabajar
+	// Cada subclase implementa su version de trabajar
 	public abstract void trabajar();
 
 	@Override
@@ -45,6 +52,7 @@ public abstract class Trabajador extends Persona{
 				+ ", toString()=" + super.toString() + "]";
 	}
 	
+	// Metodo que implementa el toString para imprimir los detalles del trabajador
     public void imprimirTrabajador() {
     	System.out.println(toString());
     }
